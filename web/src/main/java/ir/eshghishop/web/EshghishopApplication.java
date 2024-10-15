@@ -1,4 +1,4 @@
-package ir.eshghishop.eshghishop;
+package ir.eshghishop.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

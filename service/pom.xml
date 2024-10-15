@@ -9,16 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ir.eshghishop</groupId>
-    <artifactId>eshghishop</artifactId>
+    <artifactId>service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <modules>
-        <module>data</module>
-        <module>service</module>
-        <module>web</module>
-    </modules>
-    <name>eshghishop</name>
-    <description>eshghishop</description>
+    <name>service</name>
+    <description>service</description>
     <url/>
     <licenses>
         <license/>
@@ -37,6 +31,11 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>ir.eshghishop</groupId>
+            <artifactId>data</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -48,14 +47,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
